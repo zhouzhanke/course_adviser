@@ -8,6 +8,7 @@ $conn = mysqli_connect($dbhost,$dbuser,$dbpwd);
 if (! $conn)
 {
     die('Connection failure' . mysqli_error());
+    echo "Nah!!!";
 
 }
 echo "success";
