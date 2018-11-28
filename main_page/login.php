@@ -5,6 +5,7 @@ $dbuser = 'root';            // mysql用户名
 $dbpwd = '123456';          // mysql用户名密码
 $conn = mysqli_connect($dbhost,$dbuser,$dbpwd);
 
+echo "here";
 if (! $conn)
 {
     die('Connection failure' . mysqli_error());
