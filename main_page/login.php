@@ -1,15 +1,13 @@
 <?php
-$dbhost = 'localhost:3306';  // mysql服务器主机地址
-$dbuser = 'root';            // mysql用户名
-$dbpwd = '123456';          // mysql用户名密码
-$conn = mysqli_connect($dbhost,$dbuser,$dbpwd);
+$servername = "65.49.214.207";
+$username = "root";
+$password = "12345";
+$dbname = "STUDENT";
 
-echo "here";
-if (! $conn)
+$conn = new mysqli($servername,$username, $password, $dbname);
+
+if (!$conn)
 {
-    die('Connection failure' . mysqli_error());
-    echo "Nah!!!";
-
+    die("Connection failed: " . mysqli_connect_error());
 }
 echo "success";
-?>
