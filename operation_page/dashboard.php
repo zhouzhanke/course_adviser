@@ -25,26 +25,35 @@ check_login();
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
         $(document).ready(function () {
+            var show = 0;
             //show & hide fall course
-            if (("\"" + <?php echo $row["fall_course_ID"] ?> + "\"") == null
-                || "\"" + <?php echo $row["fall_course_ID"] ?> + "\"" == "")
+            if (("<?php echo $row["fall_course_ID"] ?>") == null
+                || ("<?php echo $row["fall_course_ID"] ?>") === "")
             {
-                $("#fall_course").show();
-
-
+                $("#fall_course").hide();
+                show++;
             }
             else
-                $("#fall_course").hide();
+                $("#fall_course").show();
 
             //show & hide winter course
             if (("<?php echo $row["winter_course_ID"] ?>") == null
                 || ("<?php echo $row["winter_course_ID"] ?>") === "")
             {
                 $("#winter_course").hide();
+                show++;
             }
             else {
                 $("#winter_course").show();
             }
+
+            if (show == 2)
+            {
+                $("#timetable_container").hide();
+            }
+            else
+                $("#timetable_container").show();
+
         });
     </script>
 </head>
