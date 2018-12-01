@@ -52,6 +52,9 @@ check_login();
 <body>
     <div id="main_container">
         <h1>Welcome to use Course Adviser</h1>
+        <div id="navigate">
+            <input type="button" id="logout" value="LOG OUT">
+        </div>
         <div id="Info_container">
             <p>Information:</p>
             <?php
