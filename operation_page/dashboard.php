@@ -94,9 +94,6 @@ check_login();
             <input type="button" id="choose_winter" value="Winter Course">
             <input type="button" id="choose_year" value="New School year">
         </div>
-        <?php
-        mongoConnection();
-        ?>
     </div>
 </body>
 
