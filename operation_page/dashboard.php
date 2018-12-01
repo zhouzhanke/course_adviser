@@ -58,7 +58,14 @@ check_login();
             echo "Name: " . $row["first_name"] . " " . $row["last_name"];
             echo "<br>Student_ID: " . $student_ID;
             echo "<br>Degree: " . $row["Degree"];
-            echo $row["winter_course_ID"];
+            $special = $row["Special_ID"];
+            $sql_special = "SELECT * FROM SPECIALIZATION WHERE special_ID = " . $special;
+
+            $result_special = mysqli_query($conn, $sql_special);
+            $special_row = mysqli_fetch_assoc($result_special);
+            $special = $special_row["name"];
+
+            echo "<br>Specialization: " . $special;
             ?>
         </div>
         <div id="timetable_container" style="background-color: gold">
@@ -75,6 +82,9 @@ check_login();
             <input type="button" id="choose_winter" value="Winter Course">
             <input type="button" id="choose_year" value="New School year">
         </div>
+        <?php
+        mongoConnection();
+        ?>
     </div>
 </body>
 

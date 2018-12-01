@@ -16,4 +16,10 @@ function setConnection()
         die("Connection failed: " . mysqli_connect_error());
     }
     return $conn;
-}
+};
+
+function mongoConnection()
+{
+    $mongo = new MongoClient("mongodb://65.49.214.207");
+    $db = $mongo->SPECIAL_REQUIREMENT;
+};
