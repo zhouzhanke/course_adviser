@@ -1,14 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-#strip{
-    widows: 100%;
-    max-height: 2px;
-    border-style: solid;
-    border-color: green;
-    background-color: black;
-}
-</style>
 <?php
 function check_login(){
     if (!isset($_COOKIE["log_in"]) && $_COOKIE["log_in"] != true)
@@ -20,6 +11,7 @@ function check_login(){
 check_login();
 ?>
 <head>
+    <link rel="stylesheet" type="text/css" href="my.css">
     <meta charset="utf-8">
     <title>Course Adviser</title>
     <?php

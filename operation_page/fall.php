@@ -38,6 +38,7 @@ while ($row = mysqli_fetch_assoc($result))
 }
 ?>
 <head>
+    <link rel="stylesheet" type="text/css" href="my.css">
     <meta charset="utf-8">
     <title>Course Adviser</title>
 
@@ -69,5 +70,6 @@ while ($row = mysqli_fetch_assoc($result))
             }
         ?>
 </div>
-
+<div id="strip"></div>
+    
 </html>
