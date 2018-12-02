@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+#strip{
+    widows: 100%;
+    max-height: 2px;
+    border-style: solid;
+    border-color: green;
+    background-color: black;
+}
+</style>
 <?php
 function check_login(){
     if (!isset($_COOKIE["log_in"]) && $_COOKIE["log_in"] != true)
@@ -59,8 +68,10 @@ check_login();
 </head>
 
 <body>
-    <div id="main_container">
+    <div align="center" id="main_container">
         <h1>Welcome to use Course Adviser</h1>
+        <div id="strip"></div>
+    </div>
         <div id="navigate">
             <input type="button" id="logout" value="LOG OUT" onclick="log_out()">
             <script>
@@ -89,6 +100,7 @@ check_login();
             echo "<br>Specialization: " . $special;
             ?>
         </div>
+        <div id="strip"></div>
         <div id="timetable_container" style="background-color: gold">
             <p>Time Table</p>
             <div id="fall_course">
