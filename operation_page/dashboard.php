@@ -5,7 +5,7 @@ function check_login(){
     if (!isset($_COOKIE["log_in"]) && $_COOKIE["log_in"] != true)
     {
         echo '<script>alert("Please log in");
-            location.replace("http://localhost/Course-adviser/operation_page/login.php")</script>';
+            location.replace("login.php")</script>';
     }
 }
 check_login();
@@ -62,7 +62,16 @@ check_login();
     <div id="main_container">
         <h1>Welcome to use Course Adviser</h1>
         <div id="navigate">
-            <input type="button" id="logout" value="LOG OUT">
+            <input type="button" id="logout" value="LOG OUT" onclick="log_out()">
+            <script>
+                function log_out() {
+                    <?php
+                        setcookie("log_in", false, time() - 60 * 5);
+                    ?>
+                    alert("Log out success!!!!");
+                    location.replace("login.php")
+                }
+            </script>
         </div>
         <div id="Info_container">
             <p>Information:</p>
@@ -90,9 +99,9 @@ check_login();
             </div>
         </div>
         <div id="choose_container">
+            <p>Press button to generate schedule:</p>
             <input type="button" id="choose_fall" value="Fall Course">
             <input type="button" id="choose_winter" value="Winter Course">
-            <input type="button" id="choose_year" value="New School year">
         </div>
     </div>
 </body>

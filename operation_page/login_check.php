@@ -25,7 +25,7 @@ function checkName(){
 
     if ($uname == "" || $uname == null)
     {
-        header("Location:http://localhost/Course-adviser/operation_page/login.php");
+        header("Location:login.php");
         exit;
     }
     else
@@ -50,7 +50,7 @@ function checkName(){
         global $student_ID;
         $student_ID = $row["student_ID"];
 
-        setcookie("log_in",  true, time() + 60 * 5);
+        setcookie("log_in",  true, time() + 60 * 60 * 60);
         session_start();
         setcookie("student_ID", $student_ID, time() + 5 * 60);
 
@@ -60,10 +60,10 @@ function checkName(){
     {
         setcookie("log_in", false, time() - 60 * 5);
         echo '<script>alert("wrong password!!!"); 
-                location.replace("http://localhost/Course-adviser/operation_page/login.php")</script>';
+                location.replace("login.php")</script>';
         exit;
     }
-    echo '<script>location.replace("http://localhost/Course-adviser/operation_page/dashboard.php")</script>';
+    echo '<script>location.replace("dashboard.php")</script>';
 }
 
 checkName();
