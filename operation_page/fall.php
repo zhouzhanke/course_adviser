@@ -45,8 +45,28 @@ while ($row = mysqli_fetch_assoc($result))
 
 <div id="container">
         <?php
-        foreach ()
-        $sql = "SELECT "
+        $count = 0;
+        foreach ($name as $value)
+            if ($value != null)
+            {
+                $count++;
+                echo '<div id="course_' . $count . '">';
+                echo '<form>';
+                $sql = 'SELECT Times, Days, Section FROM course WHERE Semester="Fall" AND Year="2018-2019" AND Discipline="'
+                    . $value . '" AND Code="' . $code[$count - 1] . "\"";
+
+                global $conn;
+                $result = mysqli_query($conn, $sql);
+                echo '<p>' . $name[$count - 1] . $code[$count - 1] . '</p>';
+                while ($row = mysqli_fetch_assoc($result))
+                {
+                    echo '<input type="radio" id="' . $row["Times"] . $row["Days"]
+                        .'" name = "course_' . $count . '" value="' . $row["Times"] . '|'
+                        . $row["Days"] . '">' . $row["Section"] . ' ' . $row["Times"] . ' ' . $row["Days"];
+                }
+                echo '</form>';
+                echo '</div>';
+            }
         ?>
 </div>
 
