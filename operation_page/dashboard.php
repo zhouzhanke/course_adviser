@@ -97,7 +97,6 @@
             <p>Time Table</p>
             <div id="fall_course">
                 <b>Fall</b>
-                <br>
                 <?php
                 if ($row["fall_course_ID"] != "" && $row["fall_course_ID"] != null)
                 {
@@ -108,7 +107,7 @@
 
                     for ($i = 1; $i <= 5; $i++)
                     {
-                        echo  $row_f["course_" . $i] . '<br>';
+                        echo  '<br>' . $row_f["course_" . $i];
                     }
                 }
                 ?>
@@ -116,17 +115,17 @@
             <br>
             <div id="winter_course">
                 <b>Winter</b>
-                <br>
                 <?php
                 if ($row["winter_course_ID"] != "" && $row["winter_course_ID"] != null)
                 {
                     $sql_w = 'SELECT * FROM winter_course WHERE id="' . $row["winter_course_ID"] . '"';
+                    echo $sql_w;
                     $result_w = mysqli_query($conn, $sql_w);
                     $row_w = mysqli_fetch_assoc($result_w);
 
                     for ($i = 1; $i <= 5; $i++)
                     {
-                        echo  $row_w["course_" . $i] . '<br>';
+                        echo  '<br>' . $row_w["course_" . $i];
                     }
                 }
                 ?>
