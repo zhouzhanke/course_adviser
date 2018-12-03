@@ -17,3 +17,11 @@ function setConnection()
     }
     return $conn;
 };
+
+function check_login(){
+    if (!isset($_COOKIE["log_in"]))
+    {
+        echo '<script>alert("Please log in");
+            location.replace("login.php")</script>';
+    }
+};

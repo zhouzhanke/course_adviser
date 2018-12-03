@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html>
-<?php
-function check_login(){
-    if (!isset($_COOKIE["log_in"]) && $_COOKIE["log_in"] != true)
-    {
-        echo '<script>alert("Please log in");
-            location.replace("login.php")</script>';
-    }
-}
-check_login();
-?>
 <head>
     <link rel="stylesheet" type="text/css" href="my.css">
     <meta charset="utf-8">
     <title>Course Adviser</title>
     <?php
     include_once ("connect.php");
+    check_login();
     $conn = setConnection();
     $student_ID = $_COOKIE["student_ID"];
+    $login = $_COOKIE["log_in"];
+
     $sql = "SELECT * FROM Student_Info WHERE Student_ID = " . $student_ID;
 
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
+
+    function log_out()
+    {
+        global $student_ID;
+        setcookie("student_ID", $student_ID, time() - 60 * 60, "/");
+        setcookie("log_in",  "success", time() - 60 * 60, "/" );
+        session_destroy();
+    }
     ?>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
@@ -68,9 +69,8 @@ check_login();
             <input type="button" id="logout" value="LOG OUT" onclick="log_out()">
             <script>
                 function log_out() {
-                    <?php
-                        setcookie("log_in", false, time() - 60 * 5);
-                    ?>
+                    document.cookie = "student_ID =; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/ ";
+                    document.cookie = "log_in =; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/ ";
                     alert("Log out success!!!!");
                     location.replace("login.php")
                 }
@@ -96,16 +96,55 @@ check_login();
         <div id="timetable_container" style="background-color: gold">
             <p>Time Table</p>
             <div id="fall_course">
-                fall
+                <b>Fall</b>
+                <br>
+                <?php
+                if ($row["fall_course_ID"] != "" && $row["fall_course_ID"] != null)
+                {
+                    $sql_f = 'SELECT * FROM fall_course WHERE id="' . $row["fall_course_ID"] . '"';
+
+                    $result_f = mysqli_query($conn, $sql_f);
+                    $row_f = mysqli_fetch_assoc($result_f);
+
+                    for ($i = 1; $i <= 5; $i++)
+                    {
+                        echo  $row_f["course_" . $i] . '<br>';
+                    }
+                }
+                ?>
             </div>
+            <br>
             <div id="winter_course">
-                winter
+                <b>Winter</b>
+                <br>
+                <?php
+                if ($row["winter_course_ID"] != "" && $row["winter_course_ID"] != null)
+                {
+                    $sql_w = 'SELECT * FROM winter_course WHERE id="' . $row["fall_course_ID"] . '"';
+
+                    $result_w = mysqli_query($conn, $sql_w);
+                    $row_w = mysqli_fetch_assoc($result_w);
+
+                    for ($i = 1; $i <= 5; $i++)
+                    {
+                        echo  $row_f["course_" . $i] . '<br>';
+                    }
+                }
+                ?>
             </div>
         </div>
         <div id="choose_container">
             <p>Press button to generate schedule:</p>
-            <input type="button" id="choose_fall" value="Fall Course">
-            <input type="button" id="choose_winter" value="Winter Course">
+            <script>
+                function choose_fall() {
+                    location.replace("fall.php");
+                }
+                function choose_winter() {
+                    location.replace("winter.php");
+                }
+            </script>
+            <input type="button" id="choose_fall" value="Fall Course" onclick=choose_fall()>
+            <input type="button" id="choose_winter" value="Winter Course" onclick=choose_winter()>
         </div>
     </div>
 </body>

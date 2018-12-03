@@ -50,15 +50,19 @@ function checkName(){
         global $student_ID;
         $student_ID = $row["student_ID"];
 
-        setcookie("log_in",  true, time() + 60 * 60 * 60);
+        setcookie("log_in",  "success", time() - 60 * 60, "/" );
+        setcookie("student_ID", $student_ID, time() - 60 * 60, "/");
         session_start();
-        setcookie("student_ID", $student_ID, time() + 5 * 60);
+        setcookie("log_in",  "success", time() + 60 * 60, "/" );
+        setcookie("student_ID", $student_ID, time() + 60 * 60, "/");
 
         echo '<script>alert("login success")</script>';
     }
     else
     {
-        setcookie("log_in", false, time() - 60 * 5);
+        setcookie("student_ID", $student_ID, time() - 60 * 60, "/");
+        setcookie("log_in",  "success", time() - 60 * 60, "/" );
+        session_destroy();
         echo '<script>alert("wrong password!!!"); 
                 location.replace("login.php")</script>';
         exit;

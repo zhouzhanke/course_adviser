@@ -8,7 +8,9 @@
  * Time: 8:23 PM
  */
 include "connect.php";
+include "get_course.php";
 $conn = setConnection();
+check_login();
 
 $sql = 'SELECT course.Times, course.Discipline, course.Code, course.Days  
         FROM course 
@@ -41,35 +43,80 @@ while ($row = mysqli_fetch_assoc($result))
     <link rel="stylesheet" type="text/css" href="my.css">
     <meta charset="utf-8">
     <title>Course Adviser</title>
+    <script>
+        function get_Course(str,input_id, div_id) {
+            if (str.length === 0) {
+                document.getElementById(div_id).innerHTML="";
+                document.getElementById(div_id).style.border="0px";
+                return;
+            }
 
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            }
+
+            xmlhttp.onreadystatechange=function () {
+                if (this.readyState == 4 && this.status==200){
+                    document.getElementById(div_id).innerHTML=this.responseText;
+                    document.getElementById(div_id).style.border="1px solid #A5ACB2";
+                }
+
+            }
+
+            xmlhttp.open("GET", "get_course.php?q=" + str + "&div=" + div_id, true);
+            xmlhttp.send();
+        }
+    </script>
 </head>
 
 <div id="container">
+    <input type="button" onclick=location.replace("dashboard.php") value="BACK">
         <?php
+        echo '<form action="fall_submit.php">';
         $count = 0;
         foreach ($name as $value)
             if ($value != null)
             {
                 $count++;
-                echo '<div id="course_' . $count . '">';
-                echo '<form>';
-                $sql = 'SELECT Times, Days, Section FROM course WHERE Semester="Fall" AND Year="2018-2019" AND Discipline="'
+                echo '<div>';
+                $sql = 'SELECT Times, Days, Section, Discipline, Code FROM course WHERE Semester="Fall" AND Year="2018-2019" AND Discipline="'
                     . $value . '" AND Code="' . $code[$count - 1] . "\"";
 
                 global $conn;
                 $result = mysqli_query($conn, $sql);
                 echo '<p>' . $name[$count - 1] . $code[$count - 1] . '</p>';
+                $num = 0;
                 while ($row = mysqli_fetch_assoc($result))
                 {
-                    echo '<input type="radio" id="' . $row["Times"] . $row["Days"]
-                        .'" name = "course_' . $count . '" value="' . $row["Times"] . '|'
-                        . $row["Days"] . '">' . $row["Section"] . ' ' . $row["Times"] . ' ' . $row["Days"];
+                    echo '<input type="radio" name = "course_' . $count . '" value="' . $row["Discipline"] . '-'
+                        . $row["Code"] . '-' . $row["Section"] .  '">' . $row["Section"] . ' ' . $row["Times"] . ' '
+                        . $row["Days"];
                 }
-                echo '</form>';
                 echo '</div>';
             }
+        echo '<p>You Still have ' . (5 - $count) . ' course need to choose</p>';
+        for ($i = 0;$i < 5 - $count; $i++)
+        {
+
+
+
+            echo '<div name ="Course_' . ($count + $i + 1) . '">';
+            echo '<div>';
+            echo '<input style="display:none">';
+            echo '<input type="text" size ="10" id="input_course_' . ($count + $i + 1)
+                . '" onkeyup="get_Course(this.value, this.id, course_' . ($count + $i + 1) .'.id)">';
+            echo '<div id = "course_' . ($count + $i + 1) . '"> </div>';
+            echo "</div>";
+            echo '</div>';
+            echo '</div>';
+        }
+        session_start();
+        $_SESSION["Semester"] = "fall";
+        echo '<input type="submit">';
+        echo '</form>';
         ?>
 </div>
+
 <div id="strip"></div>
     
 </html>
