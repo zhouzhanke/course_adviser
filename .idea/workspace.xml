@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a05809ba-084e-4e4d-8952-c9581d18e2a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/operation_page/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/course-adviser.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/course-adviser.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a05809ba-084e-4e4d-8952-c9581d18e2a8" name="Default Changelist" comment="fix the bug of live search in choose course pages">
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_page/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/main_page/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/operation_page/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/operation_page/dashboard.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,25 +14,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main_page/login.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation_page/fall_submit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="15">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/operation_page/connect.php">
+        <entry file="file://$PROJECT_DIR$/operation_page/winter_submit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="286">
+              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation_page/get_course.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/operation_page/dashboard.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation_page/fall.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-900">
+              <caret line="47" column="20" lean-forward="true" selection-end-line="124" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation_page/winter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="269">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>you</find>
+      <find>cookie</find>
+      <find>fall</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,8 +96,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/operation_page/connect.php" />
         <option value="$PROJECT_DIR$/main_page/login.php" />
+        <option value="$PROJECT_DIR$/operation_page/login.php" />
+        <option value="$PROJECT_DIR$/operation_page/get_couese.js" />
+        <option value="$PROJECT_DIR$/operation_page/get_course.js" />
+        <option value="$PROJECT_DIR$/operation_page/student_info.php" />
+        <option value="$PROJECT_DIR$/operation_page/livesearch.php" />
+        <option value="$PROJECT_DIR$/operation_page/course_suggest.php" />
+        <option value="$PROJECT_DIR$/operation_page/get_course.php" />
+        <option value="$PROJECT_DIR$/operation_page/connect.php" />
+        <option value="$PROJECT_DIR$/operation_page/login_check.php" />
+        <option value="$PROJECT_DIR$/operation_page/fall_submit.php" />
+        <option value="$PROJECT_DIR$/operation_page/winter_submit.php" />
+        <option value="$PROJECT_DIR$/operation_page/fall.php" />
+        <option value="$PROJECT_DIR$/operation_page/winter.php" />
+        <option value="$PROJECT_DIR$/operation_page/dashboard.php" />
       </list>
     </option>
   </component>
@@ -54,32 +118,42 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="679" />
-    <option name="width" value="687" />
+    <option name="x" value="687" />
+    <option name="width" value="679" />
     <option name="height" value="732" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="course-adviser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="course-adviser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="main_page" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="course-adviser" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="operation_page" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="course-adviser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="course-adviser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="course-adviser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="course-adviser" type="462c0819:PsiDirectoryNode" />
-              <item name="main_page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="course-adviser" type="b2602c69:ProjectViewProjectNode" />
-              <item name="course-adviser" type="462c0819:PsiDirectoryNode" />
-              <item name="operation_page" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -90,7 +164,13 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/operation_page" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -105,7 +185,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="login.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/main_page/login.php">
+    <configuration name="login.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/operation_page/login.php">
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -126,6 +206,10 @@
       <updated>1542980969805</updated>
       <workItem from="1542980973272" duration="3702000" />
       <workItem from="1543412214154" duration="8818000" />
+      <workItem from="1543460649510" duration="12350000" />
+      <workItem from="1543585826607" duration="15195000" />
+      <workItem from="1543700732959" duration="69312000" />
+      <workItem from="1543863613732" duration="5400000" />
     </task>
     <task id="LOCAL-00001" summary="conection test">
       <created>1543413403833</created>
@@ -148,11 +232,102 @@
       <option name="project" value="LOCAL" />
       <updated>1543414256077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="conection test">
+      <created>1543437403880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1543437403880</updated>
+    </task>
+    <task id="LOCAL-00005" summary="conection test">
+      <created>1543461569435</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543461569435</updated>
+    </task>
+    <task id="LOCAL-00006" summary="connect to dashboard">
+      <created>1543618554939</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543618554940</updated>
+    </task>
+    <task id="LOCAL-00007" summary="connect to dashboard">
+      <created>1543668072845</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543668072845</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add log out button">
+      <created>1543689701902</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543689701902</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update excel">
+      <created>1543701714170</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1543701714170</updated>
+    </task>
+    <task id="LOCAL-00010" summary="upload course.sql">
+      <created>1543704933799</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1543704933799</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add log out button">
+      <created>1543707611782</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1543707611782</updated>
+    </task>
+    <task id="LOCAL-00012" summary="choose course">
+      <created>1543774943275</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1543774943275</updated>
+    </task>
+    <task id="LOCAL-00013" summary="choose course">
+      <created>1543783927494</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1543783927494</updated>
+    </task>
+    <task id="LOCAL-00014" summary="time compare left">
+      <created>1543839156324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1543839156324</updated>
+    </task>
+    <task id="LOCAL-00015" summary="fix the bug of live search in choose course pages">
+      <created>1543869946399</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1543869946399</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fix the bug of live search in choose course pages">
+      <created>1543870033953</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1543870033953</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12520000" />
+    <option name="totallyTimeSpent" value="123656000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -164,25 +339,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="736" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24430956" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.245827" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Inspection Results" visible="true" weight="0.32554257" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49848256" weight="0.3305509" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32888147" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32888147" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49772382" visible="true" weight="0.3305509" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924126" weight="0.32888147" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5022762" side_tool="true" visible="true" weight="0.3305509" />
+      <window_info anchor="bottom" id="Inspection Results" order="12" sideWeight="0.49924126" visible="true" weight="0.32554257" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -194,34 +369,104 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="conection test" />
-    <option name="LAST_COMMIT_MESSAGE" value="conection test" />
+    <MESSAGE value="connect to dashboard" />
+    <MESSAGE value="update excel" />
+    <MESSAGE value="upload course.sql" />
+    <MESSAGE value="add log out button" />
+    <MESSAGE value="time compare left" />
+    <MESSAGE value="choose course" />
+    <MESSAGE value="fix the bug of live search in choose course pages" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix the bug of live search in choose course pages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/main_page/test.php" />
-    <entry file="file://$PROJECT_DIR$/operation_page/course_complete.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/operation_page/print.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page/123.php">
+    <entry file="file://$PROJECT_DIR$/main_page/123.php" />
+    <entry file="file:///usr/share/applications/jetbrains-phpstorm.desktop">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/get_couese.js" />
+    <entry file="file://$PROJECT_DIR$/operation_page/get_course.js" />
+    <entry file="file://$PROJECT_DIR$/operation_page/course_complete.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/livesearch.php" />
+    <entry file="file://$PROJECT_DIR$/operation_page/student_info.php" />
+    <entry file="file://$PROJECT_DIR$/operation_page/course_suggest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="316">
+          <caret line="34" column="7" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/operation_page/connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="181">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main_page/login.php">
+    <entry file="file://$PROJECT_DIR$/operation_page/login_check.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="196">
+          <caret line="69" column="62" lean-forward="true" selection-start-line="69" selection-start-column="3" selection-end-line="69" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/fall.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-900">
+          <caret line="47" column="20" lean-forward="true" selection-end-line="124" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/winter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/fall_submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/winter_submit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/get_course.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation_page/dashboard.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="121" column="32" selection-start-line="121" selection-start-column="32" selection-end-line="121" selection-end-column="32" />
         </state>
       </provider>
     </entry>
