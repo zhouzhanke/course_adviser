@@ -120,14 +120,13 @@
                 <?php
                 if ($row["winter_course_ID"] != "" && $row["winter_course_ID"] != null)
                 {
-                    $sql_w = 'SELECT * FROM winter_course WHERE id="' . $row["fall_course_ID"] . '"';
-
+                    $sql_w = 'SELECT * FROM winter_course WHERE id="' . $row["winter_course_ID"] . '"';
                     $result_w = mysqli_query($conn, $sql_w);
                     $row_w = mysqli_fetch_assoc($result_w);
 
                     for ($i = 1; $i <= 5; $i++)
                     {
-                        echo  $row_f["course_" . $i] . '<br>';
+                        echo  $row_w["course_" . $i] . '<br>';
                     }
                 }
                 ?>
