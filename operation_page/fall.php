@@ -47,6 +47,7 @@ while ($row = mysqli_fetch_assoc($result))
 <body>
 <div id="container">
     <input type="button" onclick=location.replace("dashboard.php") value="BACK">
+    <div id="strip"></div>
         <?php
         echo '<form action="fall_submit.php">';
         $count = 0;
@@ -66,6 +67,7 @@ while ($row = mysqli_fetch_assoc($result))
                     echo '<input type="radio" name = "course_' . $count . '" value="' . $row["Discipline"] . '-'
                         . $row["Code"] . '-' . $row["Section"] . '">' . $row["Section"] . ' ' . $row["Times"] . ' '
                         . $row["Days"];
+                    echo "<br>";
                 }
                 echo '</div>';
             }
@@ -82,7 +84,6 @@ while ($row = mysqli_fetch_assoc($result))
                     echo '<div id = "course_' . ($count + $i + 1) . '"> </div>';
                     echo "</div>";
                     echo '</div>';
-                    //echo '</div>';
                     echo '<script>
     function get_Course' .  $i .'(str,input_id, div_id) {
         if (str.length === 0) {
@@ -112,7 +113,7 @@ while ($row = mysqli_fetch_assoc($result))
         }
         session_start();
         $_SESSION["Semester"] = "fall";
-        echo '<input type="submit">';
+        echo '<input type="submit" value="submit">';
         echo '</form>';
         ?>
 </div>
