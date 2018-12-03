@@ -119,7 +119,6 @@
                 if ($row["winter_course_ID"] != "" && $row["winter_course_ID"] != null)
                 {
                     $sql_w = 'SELECT * FROM winter_course WHERE id="' . $row["winter_course_ID"] . '"';
-                    echo $sql_w;
                     $result_w = mysqli_query($conn, $sql_w);
                     $row_w = mysqli_fetch_assoc($result_w);
 
