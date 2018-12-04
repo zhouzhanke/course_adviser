@@ -35,7 +35,7 @@ if (mysqli_num_rows($result) > 0)
     {
         echo '<input type="radio" name="' . $div .'" value="' . $row["Discipline"] . '-' . $row["Code"] . '-'
         . $row["Section"] . '"/>' . $row["Section"]
-            . ' ' . $row["Times"] . ' ' .  $row["Days"] . ' ' . $row["Primary_Instructor"] . '<br>';
+            . ' ' . $row["Times"] . ' ' .  $row["Days"] . '_' . $row["Primary_Instructor"] . '<br>';
     }
 }
 else
