@@ -16,6 +16,9 @@
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);
 
+    echo $row["winter_course_ID"];
+    echo $row["fall_course_ID"];
+
     function log_out()
     {
         global $student_ID;

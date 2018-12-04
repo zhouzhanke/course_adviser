@@ -24,7 +24,7 @@ foreach ($tmp as $value)
         $Discipline .= $value;
 }
 
-$sql = 'SELECT Section, Times, Discipline, Code, Days FROM course WHERE Year="2018-2019" AND Semester="Fall" AND Discipline="'
+$sql = 'SELECT * FROM course WHERE Year="2018-2019" AND Semester="Fall" AND Discipline="'
     . $Discipline . '" AND Code="' . $Code . '"';
 
 $result = mysqli_query($conn, $sql);
@@ -35,7 +35,7 @@ if (mysqli_num_rows($result) > 0)
     {
         echo '<input type="radio" name="' . $div .'" value="' . $row["Discipline"] . '-' . $row["Code"] . '-'
         . $row["Section"] . '"/>' . $row["Section"]
-            . ' ' . $row["Times"] . ' ' . $row["Days"]  ;
+            . ' ' . $row["Times"] . ' ' .  $row["Days"] . ' ' . $row["Primary_Instructor"] . '<br>';
     }
 }
 else

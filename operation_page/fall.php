@@ -55,7 +55,7 @@ while ($row = mysqli_fetch_assoc($result))
             if ($value != null) {
                 $count++;
                 echo '<div>';
-                $sql = 'SELECT Times, Days, Section, Discipline, Code FROM course WHERE Semester="Fall" AND Year="2018-2019" AND Discipline="'
+                $sql = 'SELECT * FROM course WHERE Semester="Fall" AND Year="2018-2019" AND Discipline="'
                     . $value . '" AND Code="' . $code[$count - 1] . "\"";
 
                 global $conn;
@@ -65,7 +65,7 @@ while ($row = mysqli_fetch_assoc($result))
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<input type="radio" name = "course_' . $count . '" value="' . $row["Discipline"] . '-'
                         . $row["Code"] . '-' . $row["Section"] . '">' . $row["Section"] . ' ' . $row["Times"] . ' '
-                        . $row["Days"];
+                        . $row["Days"] . ' ' . $row["Primary_Instructor"] . '<br>';
                 }
                 echo '</div>';
             }
