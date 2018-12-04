@@ -65,7 +65,7 @@ while ($row = mysqli_fetch_assoc($result))
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo '<input type="radio" name = "course_' . $count . '" value="' . $row["Discipline"] . '-'
                         . $row["Code"] . '-' . $row["Section"] . '">' . $row["Section"] . ' ' . $row["Times"] . ' '
-                        . $row["Days"] . '_' . $row["Primary_Instructor"] . '<br>';
+                        . $row["Days"] . ' ' . $row["Primary_Instructor"] . '<br>';
                 }
                 echo '</div>';
             }
@@ -88,7 +88,6 @@ while ($row = mysqli_fetch_assoc($result))
         if (str.length === 0) {
             document.getElementById(div_id).innerHTML="";
             document.getElementById(div_id).style.border="0px";
-            return;
         }
 
         if (window.XMLHttpRequest) {
